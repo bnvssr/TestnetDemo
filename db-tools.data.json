@@ -1,0 +1,94 @@
+{
+  "testcases": [
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "4,60",
+      "consumers_and_home": "0",
+      "Health_and_family": "1,68",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "4,60",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "0",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "0",
+      "Health_and_family": "0",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "4,60",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "1,68",
+      "Work_and_income": "0",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "0",
+      "Health_and_family": "1,68",
+      "Work_and_income": "0",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "0",
+      "Work_and_income": "0",
+      "Taxes_and_assets": "5,05"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "4,60",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "1,68",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "0"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "0",
+      "Health_and_family": "1,68",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "0"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "0",
+      "Work_and_income": "8,12",
+      "Taxes_and_assets": "0"
+        },
+    {
+      "family_situation": "single",
+      "Children": "yes",
+      "traffic": "0",
+      "consumers_and_home": "7,51",
+      "Health_and_family": "1,68",
+      "Work_and_income": "0",
+      "Taxes_and_assets": "0"
+        }
+    ]
+}
