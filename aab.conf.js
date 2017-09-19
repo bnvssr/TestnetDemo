@@ -12,10 +12,14 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['db-tools.ispec.js'],
+  specs: ['aab.ispec.js'],
+  //  specs: ['temp.ispec.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 30000,
+    resultJsonOutputFile: './testResults.json'
   }
+
+  //output file path to store the final results in .json format
 };

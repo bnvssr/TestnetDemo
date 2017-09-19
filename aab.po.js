@@ -11,6 +11,7 @@ var HeaderPage = function () {
   this.marriedFamily = $$('[data-id="gezinssituatie-button-b"]');
   this.withChildren = $$('[data-id="kinderen-button-a"]');
   this.withoutChildren = $$('[data-id="kinderen-button-b"]');
+
   this.nextButton = element.all(by.css('[data-id="verder-button"]')).get(0);
 
   this.verkeerDekking = $$('[data-id="verkeer-dekking"]');
@@ -19,6 +20,9 @@ var HeaderPage = function () {
   this.werkDekking = $$('[data-id="werk-dekking"]');
   this.pensioenDekking = $$('[data-id="pensioen-dekking"]');
   this.fiscaalDekking = $$('[data-id="fiscaal-dekking"]');
-  this.totaalBedrag = $$('[totaal-bedrag]');
+
+  this.enabled = $$();
+  
+  this.totaalBedrag = $$('[data-id="totaal-bedrag"]');
 };
 module.exports = HeaderPage;
