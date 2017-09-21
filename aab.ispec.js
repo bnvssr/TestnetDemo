@@ -1,12 +1,13 @@
+'use strict';
+
 var jsonfile = require('jsonfile');
 
 // load pageobjects
 var PO = require('./aab.po');
 
 // load the test data
-//var testdata = require('./aab.data.json'); // load test data
-var file = './aab.data.json'
-var testdata = jsonfile.readFileSync(file);
+console.log("testdata file used: ", browser.params.testdata);
+var testdata = jsonfile.readFileSync(browser.params.testdata);
 var testcases = testdata.testcases;
 
 describe('Legal Expenses Insurance, ', function () {
@@ -26,67 +27,62 @@ describe('Legal Expenses Insurance, ', function () {
       browser.get(homepageURL);
     });
 
-    for (var i = 0; i < testcases.length; i++) {
-      (function (testcase) {
-        it('Test case ' + i, function () {
+    testcases.map(function (testcase, index) {
+      it('Test case ' + index, function () {
 
-          if (testcase.Family === "married") {
-            po.marriedFamily.click();
-          } else {
-            po.singleFamily.click();
+        if (testcase.Family === "married") {
+          po.marriedFamily.click();
+        } else {
+          po.singleFamily.click();
+        }
+
+        if (testcase.Children === "Yes") {
+          po.withChildren.click();
+        } else {
+          po.withoutChildren.click();
+        }
+
+        po.nextButton.click();
+
+        browser.sleep(2000);
+
+        if (testcase.Traffic === "Yes") {
+          po.verkeerDekking.click();
+        }
+
+        if (testcase.Consumers === "Yes") {
+          po.consumentDekking.click();
+        }
+
+        if (testcase.Health === "Yes") {
+          po.medischDekking.click();
+        }
+
+        if (testcase.Work === "Yes" && testcase.Pension === "Yes") {
+          console.log("Oeps verkeerd ...");
+        } else {
+
+          if (testcase.Work === "Yes") {
+            po.werkDekking.click();
           }
 
-          if (testcase.Children === "yes") {
-            po.withChildren.click();
-          } else {
-            po.withoutChildren.click();
+          if (testcase.Pension === "Yes") {
+            po.pensioenDekking.click();
           }
+        }
 
-          po.nextButton.click();
+        if (testcase.Taxes === "Yes") {
+          po.fiscaalDekking.click();
+        }
 
-          browser.sleep(2000);
+        // get expected result
+        po.totaalBedrag.getText().then(function (textValue) {
+          testcase["Expected result"] = textValue[0];
 
-          if (testcase.Traffic === "yes") {
-            po.verkeerDekking.click();
-          }
-
-          if (testcase.Consumers === "yes") {
-            po.consumentDekking.click();
-          }
-
-          if (testcase.Health === "yes") {
-            po.medischDekking.click();
-          }
-
-          if (testcase.Work === "yes" && testcase.Pension === "yes") {
-            console.log("Oeps verkeerd ...");
-          } else {
-
-            if (testcase.Work === "yes") {
-              po.werkDekking.click();
-            }
-
-            if (testcase.Pension === "yes") {
-              po.pensioenDekking.click();
-            }
-          }
-
-          if (testcase.Taxes === "yes") {
-            po.fiscaalDekking.click();
-          }
-
-          // get expected result
-
-          po.totaalBedrag.getText().then(function (textValue) {
-            //            console.log(testcases[0].expected_result, textValue[0]);
-            testcase["Expected result"] = textValue[0];
-
-            jsonfile.writeFileSync(file, testdata)
-
-          });
+          jsonfile.writeFileSync(browser.params.testdata, testdata)
 
         });
-      })(testdata.testcases[i]);
-    }
+      });
+    });
   });
 });

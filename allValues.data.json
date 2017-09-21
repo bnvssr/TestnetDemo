@@ -1,0 +1,17 @@
+{
+  "testcases": [{
+    "Family": "single",
+    "Children": "No",
+    "Traffic": "No",
+    "Consumers": "No",
+    "Health": "No",
+    "Expected result": "€ 0,00"
+  }, {
+    "Family": "married",
+    "Children": "Yes",
+    "Traffic": "Yes",
+    "Consumers": "Yes",
+    "Health": "No",
+    "Expected result": "€ 12,11"
+  }]
+}
