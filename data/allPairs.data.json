@@ -1,0 +1,73 @@
+{
+  "testcases": [{
+    "Family": "single",
+    "Children": "No",
+    "Traffic": "No",
+    "Consumers": "No",
+    "Health": "No",
+    "Expected result": "€ 0,00"
+  }, {
+    "Family": "single",
+    "Children": "Yes",
+    "Traffic": "Yes",
+    "Consumers": "No",
+    "Health": "No",
+    "Expected result": "€ 4,60"
+  }, {
+    "Family": "married",
+    "Children": "No",
+    "Traffic": "Yes",
+    "Consumers": "No",
+    "Health": "No",
+    "Expected result": "€ 4,60"
+  }, {
+    "Family": "single",
+    "Children": "Yes",
+    "Traffic": "No",
+    "Consumers": "Yes",
+    "Health": "No",
+    "Expected result": "€ 7,51"
+  }, {
+    "Family": "married",
+    "Children": "No",
+    "Traffic": "No",
+    "Consumers": "Yes",
+    "Health": "No",
+    "Expected result": "€ 7,51"
+  }, {
+    "Family": "married",
+    "Children": "Yes",
+    "Traffic": "Yes",
+    "Consumers": "Yes",
+    "Health": "No",
+    "Expected result": "€ 12,11"
+  }, {
+    "Family": "single",
+    "Children": "Yes",
+    "Traffic": "No",
+    "Consumers": "No",
+    "Health": "Yes",
+    "Expected result": "€ 1,68"
+  }, {
+    "Family": "married",
+    "Children": "No",
+    "Traffic": "No",
+    "Consumers": "No",
+    "Health": "Yes",
+    "Expected result": "€ 4,71"
+  }, {
+    "Family": "married",
+    "Children": "Yes",
+    "Traffic": "Yes",
+    "Consumers": "No",
+    "Health": "Yes",
+    "Expected result": "€ 9,31"
+  }, {
+    "Family": "married",
+    "Children": "Yes",
+    "Traffic": "No",
+    "Consumers": "Yes",
+    "Health": "Yes",
+    "Expected result": "€ 12,22"
+  }]
+}
