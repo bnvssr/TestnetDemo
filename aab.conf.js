@@ -12,7 +12,7 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['./getExpectedResult.ispec.js'],
+  specs: ['aab.ispec.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
@@ -21,9 +21,9 @@ exports.config = {
   },
 
   params: {
-    //testdata: './data/allValues.data.json'
-    testdata: './data/allpairs.data.json'
-    //  testdata: './data/allCombination.data.json'
+    //testdata: './allValues.data.json'
+        testdata: './allpairs.data.json'
+    //  testdata: './allCombination.data.json'
   }
 
 };
