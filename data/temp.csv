@@ -1,0 +1,11 @@
+name,Family_situation,Children,Traffic,Consumers_and_home,Health_and_family ,Work_and_income,Taxes_and_assets,Payment_period,Total
+"testcase-1","single","Yes","No","No","No","No","No","Monthly",""
+"testcase-2","single","Yes","No","Yes","Yes","No","No","Monthly",""
+"testcase-3","single","Yes","Yes","No","Yes","No","No","Monthly",""
+"testcase-4","single","Yes","No","Yes","No","Yes","No","Monthly",""
+"testcase-5","single","Yes","Yes","No","No","Yes","No","Monthly",""
+"testcase-6","single","Yes","Yes","Yes","Yes","Yes","No","Monthly",""
+"testcase-7","single","Yes","No","Yes","No","No","Yes","Monthly",""
+"testcase-8","single","Yes","Yes","No","No","No","Yes","Monthly",""
+"testcase-9","single","Yes","Yes","Yes","Yes","No","Yes","Monthly",""
+"testcase-10","single","Yes","Yes","Yes","No","Yes","Yes","Monthly",""

@@ -30,7 +30,7 @@ describe('Legal Expenses Insurance, ', function () {
     testcases.map(function (testcase, index) {
       it('Test case ' + index, function () {
 
-        if (testcase.Family === "married") {
+        if (testcase.Family_situation === "married") {
           po.marriedFamily.click();
         } else {
           po.singleFamily.click();
@@ -50,28 +50,19 @@ describe('Legal Expenses Insurance, ', function () {
           po.verkeerDekking.click();
         }
 
-        if (testcase.Consumers === "Yes") {
+        if (testcase.Consumers_and_home === "Yes") {
           po.consumentDekking.click();
         }
 
-        if (testcase.Health === "Yes") {
+        if (testcase.Health_and_family === "Yes") {
           po.medischDekking.click();
         }
 
-        if (testcase.Work === "Yes" && testcase.Pension === "Yes") {
-          console.log("Oeps verkeerd ...");
-        } else {
-
-          if (testcase.Work === "Yes") {
-            po.werkDekking.click();
-          }
-
-          if (testcase.Pension === "Yes") {
-            po.pensioenDekking.click();
-          }
+        if (testcase.Work_and_income === "Yes") {
+          po.werkDekking.click();
         }
 
-        if (testcase.Taxes === "Yes") {
+        if (testcase.Taxes_and_assets === "Yes") {
           po.fiscaalDekking.click();
         }
 

@@ -22,7 +22,8 @@ var HeaderPage = function () {
   this.fiscaalDekking = $$('[data-id="fiscaal-dekking"]');
 
   this.enabled = $$();
-  
-  this.totaalBedrag = $$('[data-id="totaal-bedrag"]');
+
+  this.totaalBedrag = $$('[data-id="totaal-header-bedrag"]');
+  this.totalAmount = $$('[data-id="totaal-header-bedrag"]');
 };
 module.exports = HeaderPage;

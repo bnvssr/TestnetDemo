@@ -1,6 +1,7 @@
 'use strict';
 
 var jsonfile = require('jsonfile');
+//var jr = require('jasmine-reporters');
 
 // load pageobjects
 var PO = require('./aab.po');
@@ -18,7 +19,7 @@ describe('Legal Expenses Insurance, ', function () {
   var po = new PO();
   var homepageURL = 'https://extra.abnamro.nl/interactie/rb/';
 
-  describe('get expected result ', function () {
+  describe('test ', function () {
 
     beforeEach(function () {
       // Ensure the height of the browser is large enough to see the language switch and search and be able to click on it
@@ -35,7 +36,7 @@ describe('Legal Expenses Insurance, ', function () {
 
         it('Test case ' + index, function () {
 
-          if (testcase.Family === "married") {
+          if (testcase.Family_situation === "married") {
             po.marriedFamily.click();
           } else {
             po.singleFamily.click();
@@ -51,41 +52,33 @@ describe('Legal Expenses Insurance, ', function () {
 
           browser.sleep(2000);
 
-          if (testcase.Traffic === "Yes") {
+          if (testcase.Traffic != 0) {
             po.verkeerDekking.click();
           }
 
-          if (testcase.Consumers === "Yes") {
+          if (testcase.Consumers_and_home != 0) {
             po.consumentDekking.click();
           }
 
-          if (testcase.Health === "Yes") {
+          if (testcase.Health_and_family != 0) {
             po.medischDekking.click();
           }
 
-          if (testcase.Work === "Yes" && testcase.Pension === "Yes") {
-            console.log("Oeps verkeerd ...");
-          } else {
-
-            if (testcase.Work === "Yes") {
-              po.werkDekking.click();
-            }
-
-            if (testcase.Pension === "Yes") {
-              po.pensioenDekking.click();
-            }
+          if (testcase.Work_and_income != 0) {
+            po.werkDekking.click();
           }
 
-          if (testcase.Taxes === "Yes") {
+          if (testcase.Taxes_and_assets === "Yes") {
             po.fiscaalDekking.click();
           }
+
 
           // get actual result
           var actualResult = po.totaalBedrag.getText().then(function (textValue) {
             return textValue[0];
           });
 
-          expect(actualResult).toBe(testcase["Expected result"]);
+          expect(actualResult).toBe(testcase.Total);
 
         });
 

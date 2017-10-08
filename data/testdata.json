@@ -1,0 +1,168 @@
+{
+  "testcases": [{
+    "name": "testcase-1",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "0",
+    "Consumers_and_home": "0",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-2",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "0",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "4,71",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-3",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "0",
+    "Health_and_family ": "4,71",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-4",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "0",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "8,12",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-5",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "0",
+    "Health_and_family ": "0",
+    "Work_and_income": "8,12",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-6",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "4,71",
+    "Work_and_income": "8,12",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-7",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "0",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "5,05",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-8",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "0",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "5,05",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-9",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "4,71",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "5,05",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-10",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "8,12",
+    "Taxes_and_assets": "5,05",
+    "Payment_period": "Yearly",
+    "Total": ""
+  }, {
+    "name": "testcase-11",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "0",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Monthly",
+    "Total": ""
+  }, {
+    "name": "testcase-12",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "0",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Monthly",
+    "Total": ""
+  }, {
+    "name": "testcase-13",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "4,71",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Monthly",
+    "Total": ""
+  }, {
+    "name": "testcase-14",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "8,12",
+    "Taxes_and_assets": "0",
+    "Payment_period": "Monthly",
+    "Total": ""
+  }, {
+    "name": "testcase-15",
+    "Family_situation": "married",
+    "Children": "No",
+    "Traffic": "4,60",
+    "Consumers_and_home": "7,51",
+    "Health_and_family ": "0",
+    "Work_and_income": "0",
+    "Taxes_and_assets": "5,05",
+    "Payment_period": "Monthly",
+    "Total": ""
+  }]
+}
